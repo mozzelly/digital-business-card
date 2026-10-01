@@ -329,24 +329,28 @@ body {
 }
 
 
-.qr-placeholder {
+#qrcode {
     width: 120px;
     height: 120px;
 
-    margin: auto;
+    margin: 0 auto;
+
+    padding: 8px;
+
+    background: #ffffff;
+
+    border-radius: 10px;
 
     display: flex;
 
     justify-content: center;
+
     align-items: center;
+}
 
-    background: #ffffff;
-
-    color: #111111;
-
-    font-weight: 800;
-
-    border-radius: 10px;
+#qrcode img {
+    width: 104px;
+    height: 104px;
 }
 
 
