@@ -47,4 +47,11 @@ END:VCARD
     link.click();
 
     URL.revokeObjectURL(url);
-}
+}new QRCode(document.getElementById("qrcode"), {
+    text: window.location.href,
+    width: 120,
+    height: 120,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+});
