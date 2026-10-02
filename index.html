@@ -1,153 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Digital Business Card">
-
-    <title>Mozz Elly | Digital Business Card</title>
+    <title>Digital Card Platform</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="auth.js"></script>
 </head>
 
 <body>
 
-    <main class="card">
+    <main class="landing">
 
-        <!-- Top Actions -->
-        <div class="top-actions">
-            <button class="icon-btn" onclick="shareCard()" aria-label="Share card">
-                ↗
-            </button>
+        <div class="landing-content">
+
+            <div class="logo">
+                DIGITAL<span>CARD</span>
+            </div>
+
+            <h1>
+                Your Professional Identity,
+                <span>Digitally.</span>
+            </h1>
+
+            <p>
+                Create your professional digital business card,
+                share it instantly and connect with anyone using
+                one simple link.
+            </p>
+
+            <div class="landing-buttons">
+                <a href="signup.html" class="btn primary">
+                    Create Your Card
+                </a>
+
+                <a href="login.html" class="btn secondary">
+                    Login
+                </a>
+            </div>
+
         </div>
 
-
-        <!-- Profile -->
-        <section class="profile">
-
-            <div class="profile-image">
-                <img src="assets/profile.jpg" alt="Mozz Elly">
-            </div>
-
-            <h1>Mozz Elly</h1>
-
-            <p class="profession">
-                Creative & Digital Marketing Specialist
-            </p>
-
-            <p class="company">
-                Mkombozi Digital
-            </p>
-
-        </section>
-
-
-        <!-- Primary Actions -->
-        <section class="primary-actions">
-
-            <a href="tel:+255745840475" class="primary-btn">
-                <span>☎</span>
-                Call
-            </a>
-
-            <a href="https://wa.me/255745840475"
-               target="_blank"
-               class="primary-btn">
-                <span>◉</span>
-                WhatsApp
-            </a>
-
-        </section>
-
-
-        <!-- Contact Information -->
-        <section class="info-section">
-
-            <div class="info-item">
-
-                <div class="info-icon">
-                    ✉
-                </div>
-
-                <div>
-                    <span>Email</span>
-                    <strong>mozzelly99@gmail.com</strong>
-                </div>
-
-            </div>
-
-
-            <div class="info-item">
-
-                <div class="info-icon">
-                    🌐
-                </div>
-
-                <div>
-                    <span>Website</span>
-                    <strong>www.testmozzelly.com</strong>
-                </div>
-
-            </div>
-
-
-            <div class="info-item">
-
-                <div class="info-icon">
-                    📍
-                </div>
-
-                <div>
-                    <span>Location</span>
-                    <strong>Dar es Salaam, Tanzania</strong>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Social Links -->
-        <section class="social-section">
-
-            <a href="https://www.instagram.com/mozz_elly" target="_blank" aria-label="Instagram">Instagram</a>
-
-            <a href="https://www.linkedin.com/in/mozz elly" target="_blank" aria-label="LinkedIn">LinkedIn</a>
-
-            <a href="https://www.facebook.com/share/1EzCCtq2qJ/" aria-label="Facebook">Facebook</a>
-
-        </section>
-
-
-        <!-- Save Contact -->
-        <button class="save-btn" onclick="saveContact()">
-            + Save Contact
-        </button>
-
-
-        <!-- QR -->
-        <section class="qr-section">
-
-            <p>Scan to save my contact</p>
-
-            <div id="qrcode"></div>
-
-        </section>
-
-
-        <footer style="text-align: center; width: 100%; display: block; margin-top: 28px;">
-    <p style="text-align: center; margin-top: 28px; font-size: 14px; color: #8e8e93;">Digital Mozz Elly Card</p>
-</footer>
-
     </main>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
-
-<script src="script.js"></script>
 
 </body>
 </html>

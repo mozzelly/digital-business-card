@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Digital Card</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="auth.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+</head>
+
+
+<body class="card-page">
+
+<div id="loading" class="loading">
+
+    Loading card...
+
+</div>
+
+
+<main
+    id="profileCard"
+    class="profile-card"
+    style="display:none;"
+>
+
+    <div class="profile-cover"></div>
+
+
+    <div class="profile-content">
+
+        <img
+            id="profileImage"
+            class="profile-photo"
+            src=""
+            alt="Profile"
+        >
+
+
+        <h1 id="fullName"></h1>
+
+        <p
+            id="jobTitle"
+            class="job-title"
+        ></p>
+
+
+        <p
+            id="company"
+            class="company"
+        ></p>
+
+
+        <p
+            id="bio"
+            class="bio"
+        ></p>
+
+
+        <div class="action-buttons">
+
+            <a
+                id="callBtn"
+                class="action-btn"
+                href="#"
+            >
+                Call
+            </a>
+
+            <a
+                id="whatsappBtn"
+                class="action-btn whatsapp"
+                href="#"
+                target="_blank"
+            >
+                WhatsApp
+            </a>
+
+            <a
+                id="emailBtn"
+                class="action-btn"
+                href="#"
+            >
+                Email
+            </a>
+
+        </div>
+
+
+        <div class="info-list">
+
+            <div
+                id="websiteRow"
+                class="info-row"
+            >
+                🌐
+                <a
+                    id="website"
+                    href="#"
+                    target="_blank"
+                >
+                    Website
+                </a>
+            </div>
+
+
+            <div
+                id="locationRow"
+                class="info-row"
+            >
+                📍
+                <span id="location"></span>
+            </div>
+
+        </div>
+
+
+        <div
+            id="servicesSection"
+            class="services-section"
+        >
+
+            <h3>Services</h3>
+
+            <p id="services"></p>
+
+        </div>
+
+
+        <div class="socials">
+
+            <a
+                id="instagram"
+                href="#"
+                target="_blank"
+            >
+                Instagram
+            </a>
+
+            <a
+                id="facebook"
+                href="#"
+                target="_blank"
+            >
+                Facebook
+            </a>
+
+            <a
+                id="linkedin"
+                href="#"
+                target="_blank"
+            >
+                LinkedIn
+            </a>
+
+            <a
+                id="tiktok"
+                href="#"
+                target="_blank"
+            >
+                TikTok
+            </a>
+
+        </div>
+
+
+        <button
+            id="saveContact"
+            class="btn primary full"
+        >
+            Save Contact
+        </button>
+
+
+        <div class="qr-box">
+
+            <h3>Scan & Share</h3>
+
+            <div id="qrcode"></div>
+
+        </div>
+
+
+        <div class="powered">
+
+            Digital Card Platform
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="card.js"></script>
+
+</body>
+</html>

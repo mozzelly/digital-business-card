@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="auth.js"></script>
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">
+        DIGITAL<span>CARD</span>
+    </div>
+
+    <button id="logoutBtn" class="logout-btn">
+        Logout
+    </button>
+
+</header>
+
+
+<main class="dashboard">
+
+    <section class="dashboard-header">
+
+        <div>
+
+            <p class="eyebrow">
+                DIGITAL CARD PLATFORM
+            </p>
+
+            <h1>Create Your Card</h1>
+
+            <p class="muted">
+                Add your professional information below.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <form id="cardForm" class="card-form">
+
+        <div class="form-section">
+
+            <h2>Profile</h2>
+
+            <label>Profile Photo</label>
+
+            <input
+                type="file"
+                id="profileImage"
+                accept="image/*"
+            >
+
+            <label>Full Name *</label>
+
+            <input
+                type="text"
+                id="fullName"
+                placeholder="Mozz Elly"
+                required
+            >
+
+            <label>Job Title</label>
+
+            <input
+                type="text"
+                id="jobTitle"
+                placeholder="Creative & Digital Marketing Specialist"
+            >
+
+            <label>Company</label>
+
+            <input
+                type="text"
+                id="company"
+                placeholder="Mkombozi Digital"
+            >
+
+            <label>Bio</label>
+
+            <textarea
+                id="bio"
+                placeholder="Tell people briefly what you do..."
+            ></textarea>
+
+        </div>
+
+
+        <div class="form-section">
+
+            <h2>Contact</h2>
+
+            <label>Phone</label>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="+255..."
+            >
+
+            <label>WhatsApp</label>
+
+            <input
+                type="tel"
+                id="whatsapp"
+                placeholder="+255..."
+            >
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="hello@example.com"
+            >
+
+            <label>Website</label>
+
+            <input
+                type="url"
+                id="website"
+                placeholder="https://example.com"
+            >
+
+            <label>Location</label>
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Dar es Salaam, Tanzania"
+            >
+
+        </div>
+
+
+        <div class="form-section">
+
+            <h2>Social Media</h2>
+
+            <label>Instagram</label>
+
+            <input
+                type="text"
+                id="instagram"
+                placeholder="@username"
+            >
+
+            <label>Facebook</label>
+
+            <input
+                type="text"
+                id="facebook"
+                placeholder="Facebook profile URL"
+            >
+
+            <label>LinkedIn</label>
+
+            <input
+                type="text"
+                id="linkedin"
+                placeholder="LinkedIn profile URL"
+            >
+
+            <label>TikTok</label>
+
+            <input
+                type="text"
+                id="tiktok"
+                placeholder="@username"
+            >
+
+        </div>
+
+
+        <div class="form-section">
+
+            <h2>Business</h2>
+
+            <label>Services</label>
+
+            <textarea
+                id="services"
+                placeholder="Branding, Graphic Design, Digital Marketing..."
+            ></textarea>
+
+            <label>Card Username / URL</label>
+
+            <div class="slug-input">
+
+                <span>card/</span>
+
+                <input
+                    type="text"
+                    id="slug"
+                    placeholder="mozz-elly"
+                    required
+                >
+
+            </div>
+
+            <small>
+                Use lowercase letters, numbers and hyphens only.
+            </small>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="btn primary full save-btn"
+        >
+            Generate My Digital Card
+        </button>
+
+        <p id="dashboardMessage" class="message"></p>
+
+    </form>
+
+</main>
+
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
