@@ -355,13 +355,16 @@ body {
 
 
 footer {
-    text-align: center;
+    width: 100% !important;
+    text-align: center !important;
+    margin-top: 15px !important;
+}
 
-    margin-top: 12px;
-
-    font-size: 11px;
-
-    color: #777777;
+footer p {
+    font-size: 14px !important;
+    color: #777777 !important;
+    text-align: center !important;
+    margin: 0 !important;
 }
 
 
